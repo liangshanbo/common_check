@@ -16,10 +16,11 @@ require.config({
 // 	console.log('ok');
 // });
 
-// require(['storage'],function(storage){
-// 	storage.setItems(['a','b'],['awfdagdsh','dsadasd']);
-// });
+require(['storage'],function(storage){
+	storage.setItems(['a','b'],['awfdagdsh','dsadasd']);
+});
 require(['checkval'],function(checkVal){
 	// console.log('answer:'+checkVal.checkEqual(1,2,4));
-	console.log('手机号：'+checkVal.checkCWord('两',null,null));
+	// console.log('手机号：'+checkVal.isCWord('两',null,null));
+	document.write('isAndroid:'+checkVal.isAndroid());
 });
