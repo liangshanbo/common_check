@@ -69,9 +69,9 @@ define({
 		return !!this.ua.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/);
 	},
 	isIE:function(){
-		return this.ua.match(/msie/i);
+		return !!this.ua.match(/msie/i);
 	},
 	isWeiXin:function(){
-		return this.ua.match(/MicroMessenger/i) == 'micromessenger';
+		return !!this.ua.match(/MicroMessenger/i);
 	}
 });
